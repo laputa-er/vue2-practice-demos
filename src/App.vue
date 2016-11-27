@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+  <div>
+      <h1>vue2 功能 demos</h1>
+      <RouterLinks></RouterLinks>
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
-
+import RouterLinks from './components/RouterLinks'
 export default {
   name: 'app',
+  data () {
+    return {
+    }
+  },
   components: {
-    Hello
+    Hello,
+    RouterLinks
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  @import './styles/common.css';
 </style>
