@@ -11,6 +11,7 @@ const viewsRouters = config.views.map(item => {
   }
   return {
     path: `/views/${item}`,
+    name: item,
     component: component
   }
 })

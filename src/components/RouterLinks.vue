@@ -3,18 +3,25 @@
   export default {
     data () {
       return {
-        views: config.views.map((item, index, views) => `/views/${item}`)
+        views: config.views
       }
     }
   }
 </script>
 
 <template>
-  <div>
-    <router-link v-for="item in views" :to="item">{{ item }}</router-link>
+  <div id="links">
+    <router-link
+      v-for="(item, index) in views"
+      :to="{name: item}"
+      :key="index">{{ item }}</router-link>
   </div>
 </template>
 
-<style>
-  
+<style scoped lang="sass">
+  #links
+    a
+      padding-left: 10px;
+      font-size: 12px;
+      display: block;
 </style>

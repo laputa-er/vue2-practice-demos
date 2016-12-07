@@ -49,6 +49,10 @@ module.exports = {
     ],
     loaders: [
       {
+        test: /\.scss$/,
+        loader: 'style!css!sass?sourceMap'
+      },
+      {
         test: /\.vue$/,
         loader: 'vue'
       },
@@ -90,5 +94,8 @@ module.exports = {
         browsers: ['last 2 versions']
       })
     ]
+  },
+  externals: {
+    TweenLite: 'TweenLite'
   }
 }

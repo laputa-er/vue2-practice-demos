@@ -1,0 +1,40 @@
+/**
+ * 
+ * @authors sean(eli01linux@aliyun.com)
+ * @date    2016-12-04 14:50:29
+ */
+<script>
+  export default {
+    data () {
+      return {
+        show: true
+      }
+    }
+  }
+</script>
+
+<template>
+  <div id="example-1">
+    <button @click="show = !show">
+      Toggle render
+    </button>
+    <transition name="slide-fade">
+      <p v-if="show">hello</p>
+    </transition>
+  </div>
+</template>
+
+<style scoped>
+  /* 可以设置不同的进入和离开动画 */
+  /* 设置持续时间和动画函数 */
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-active {
+    padding-left: 10px;
+    opacity: 0;
+  }
+</style>
