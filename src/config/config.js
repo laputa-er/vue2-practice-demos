@@ -87,7 +87,16 @@ let config = {
     'l79_transition_watcher_with-tween.js-2',
     'l80_render_anchored-heading',
     'l81_render_vnodes_mutiplexing',
-    'l82_render_js-replacing-directive'
+    'l82_render_js-replacing-directive',
+    'l83_render_jsx',
+    'l84_render_functional_smart-list',
+    'l85_directive_demo_focus',
+    'l86_directive_hooks_params',
+    'l87_directive_hooks_optimized',
+    'l88_directive_value_js-expression',
+    'l89_mixin_demo_hello',
+    'l90_mixin_options_func',
+    'l91_mixin_options_obj'
   ]
 }
 
