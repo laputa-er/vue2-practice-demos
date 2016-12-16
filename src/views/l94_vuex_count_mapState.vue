@@ -51,7 +51,7 @@
 <template>
   <div>
     <p>count: {{ count }}</p>
-    <p>localCount: {{ localCount }}</p>
+    <p>countPlusLocalState: {{ countPlusLocalState }}</p>
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>

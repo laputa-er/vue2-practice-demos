@@ -98,7 +98,8 @@ let config = {
     'l90_mixin_options_func',
     'l91_mixin_options_obj',
     'l92_vuex_count_uninject',
-    'l93_vuex_count_inject'
+    'l93_vuex_count_inject',
+    'l94_vuex_count_mapState'
   ]
 }
 
