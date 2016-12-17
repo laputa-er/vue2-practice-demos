@@ -100,7 +100,12 @@ let config = {
     'l92_vuex_count_uninject',
     'l93_vuex_count_inject',
     'l94_vuex_count_mapState',
-    'l95_vuex_getters'
+    'l95_vuex_getters',
+    'l96_vuex_mapGetters',
+    'l97_vuex_mutations_count',
+    'l98_vuex_mutations_count_mapMutations',
+    'l99_vuex_actions_dispatch',
+    'l100_vuex_actions_with_muti-mutations'
   ]
 }
 
